@@ -79,7 +79,7 @@ export default function Home({ postsPagination }: HomeProps) {
                 <div className={styles.created}>
                   <div>
                     <FiCalendar color="#bbbbbb" />
-                    <time>
+                    <span>
                       {format(
                         new Date(post.first_publication_date),
                         'd MMM yyyy',
@@ -87,7 +87,7 @@ export default function Home({ postsPagination }: HomeProps) {
                           locale: ptBR,
                         }
                       )}
-                    </time>
+                    </span>
                   </div>
                   <div>
                     <FiUser color="#bbbbbb" />
